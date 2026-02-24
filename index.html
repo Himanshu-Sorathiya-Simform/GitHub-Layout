@@ -5,6 +5,9 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="GitHub Profile landing page clone" />
 
 		<link
 			rel="stylesheet"
@@ -18,13 +21,13 @@
 			<section class="header__primary">
 				<nav class="header__primary--left">
 					<button
-						class="btn-with-border header__link-primary header__link-primary--hamburger">
+						class="btn-with-border header__primary-link header__primary-link--hamburger">
 						<svg class="icon--small">
 							<use href="./assets/ui_icons_sprite.svg#three-bars"></use>
 						</svg>
 					</button>
 
-					<button class="header__link-primary header__link-primary--github">
+					<button class="header__primary-link header__primary-link--github">
 						<svg class="icon--large">
 							<use href="./assets/ui_icons_sprite.svg#mark-github"></use>
 						</svg>
@@ -32,7 +35,7 @@
 				</nav>
 
 				<nav class="header__primary--middle">
-					<button class="header__link-primary header__link-primary--username">
+					<button class="header__primary-link header__primary-link--username">
 						Himanshu-Sorathiya-Simform
 					</button>
 
@@ -48,76 +51,136 @@
 				</nav>
 
 				<nav class="header__primary--right">
-					<button
-						class="btn-with-border header__link-primary header__link-primary--copilot">
-						<svg class="icon--small">
-							<use href="./assets/ui_icons_sprite.svg#copilot"></use>
-						</svg>
-					</button>
+					<ul class="header__primary-list">
+						<li class="header__primary-item">
+							<button
+								class="btn-with-border header__primary-link header__primary-link--copilot">
+								<svg class="icon--small">
+									<use
+										href="./assets/ui_icons_sprite.svg#copilot"></use>
+								</svg>
+							</button>
+						</li>
 
-					<button
-						class="btn-with-border header__link-primary header__link-primary--create">
-						<svg class="icon--small">
-							<use href="./assets/ui_icons_sprite.svg#plus"></use>
-						</svg>
-					</button>
+						<li class="header__primary-item">
+							<button
+								class="btn-with-border header__primary-link header__primary-link--create">
+								<svg class="icon--small">
+									<use href="./assets/ui_icons_sprite.svg#plus"></use>
+								</svg>
+							</button>
+						</li>
 
-					<button
-						class="btn-with-border header__link-primary header__link-primary--issue">
-						<svg class="icon--small">
-							<use href="./assets/ui_icons_sprite.svg#issue-opened"></use>
-						</svg>
-					</button>
+						<li class="header__primary-item">
+							<button
+								class="btn-with-border header__primary-link header__primary-link--issue">
+								<svg class="icon--small">
+									<use
+										href="./assets/ui_icons_sprite.svg#issue-opened"></use>
+								</svg>
+							</button>
+						</li>
 
-					<button
-						class="btn-with-border header__link-primary header__link-primary--pr">
-						<svg class="icon--small">
-							<use
-								href="./assets/ui_icons_sprite.svg#git-pull-request"></use>
-						</svg>
-					</button>
+						<li class="header__primary-item">
+							<button
+								class="btn-with-border header__primary-link header__primary-link--pr">
+								<svg class="icon--small">
+									<use
+										href="./assets/ui_icons_sprite.svg#git-pull-request"></use>
+								</svg>
+							</button>
+						</li>
 
-					<button
-						class="btn-with-border header__link-primary header__link-primary--repository">
-						<svg class="icon--small">
-							<use href="./assets/ui_icons_sprite.svg#repo"></use>
-						</svg>
-					</button>
+						<li class="header__primary-item">
+							<button
+								class="btn-with-border header__primary-link header__primary-link--repository">
+								<svg class="icon--small">
+									<use href="./assets/ui_icons_sprite.svg#repo"></use>
+								</svg>
+							</button>
+						</li>
 
-					<button
-						class="btn-with-border header__link-primary header__link-primary--notification">
-						<svg class="icon--small">
-							<use href="./assets/ui_icons_sprite.svg#inbox"></use>
-						</svg>
-					</button>
+						<li class="header__primary-item">
+							<button
+								class="btn-with-border header__primary-link header__primary-link--notification">
+								<svg class="icon--small">
+									<use href="./assets/ui_icons_sprite.svg#inbox"></use>
+								</svg>
+							</button>
+						</li>
 
-					<img
-						src="https://picsum.photos/500"
-						alt="User"
-						class="header__profile" />
+						<li class="header__primary-item">
+							<img
+								src="https://picsum.photos/500"
+								alt="User"
+								class="header__profile" />
+						</li>
+					</ul>
 				</nav>
 			</section>
 
 			<nav class="header__secondary">
-				<a
-					href="#"
-					class="header__link-secondary header__link-secondary--overview"></a>
+				<ul class="header__secondary-list">
+					<li class="header__secondary-item">
+						<a
+							href="#"
+							class="header__secondary-link header__secondary-link--active header__secondary-link--overview">
+							<svg class="icon--small">
+								<use href="./assets/ui_icons_sprite.svg#book"></use>
+							</svg>
 
-				<a
-					href="#"
-					class="header__link-secondary header__link-secondary--repository"></a>
+							<span>Overview</span>
+						</a>
+					</li>
 
-				<a
-					href="#"
-					class="header__link-secondary header__link-secondary--projects"></a>
+					<li class="header__secondary-item">
+						<a
+							href="#"
+							class="header__secondary-link header__secondary-link--repository">
+							<svg class="icon--small">
+								<use href="./assets/ui_icons_sprite.svg#repo"></use>
+							</svg>
 
-				<a
-					href="#"
-					class="header__link-secondary header__link-secondary--packages"></a>
+							<span>Repositories</span>
+						</a>
+					</li>
 
-				<a
-					href="#"
-					class="header__link-secondary header__link-secondary--star"></a>
+					<li class="header__secondary-item">
+						<a
+							href="#"
+							class="header__secondary-link header__secondary-link--projects">
+							<svg class="icon--small">
+								<use href="./assets/ui_icons_sprite.svg#table"></use>
+							</svg>
+
+							<span>Projects</span>
+						</a>
+					</li>
+
+					<li class="header__secondary-item">
+						<a
+							href="#"
+							class="header__secondary-link header__secondary-link--packages">
+							<svg class="icon--small">
+								<use href="./assets/ui_icons_sprite.svg#package"></use>
+							</svg>
+
+							<span>Packages</span>
+						</a>
+					</li>
+
+					<li class="header__secondary-item">
+						<a
+							href="#"
+							class="header__secondary-link header__secondary-link--star">
+							<svg class="icon--small">
+								<use href="./assets/ui_icons_sprite.svg#star"></use>
+							</svg>
+
+							<span>Stars</span>
+						</a>
+					</li>
+				</ul>
 			</nav>
 		</header>
 
@@ -179,7 +242,9 @@
 
 					<ol class="activity__years">
 						<li class="activity__year"></li>
+
 						<li class="activity__year"></li>
+
 						<li class="activity__year"></li>
 					</ol>
 				</section>
