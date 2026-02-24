@@ -5,6 +5,11 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="stylesheet"
+			href="./style.css" />
+
 		<title>GitHub Profile</title>
 	</head>
 
@@ -13,37 +18,82 @@
 			<section class="header__primary">
 				<nav class="header__primary--left">
 					<button
-						class="header__link-primary header__link-primary--hamburger"></button>
+						class="btn-with-border header__link-primary header__link-primary--hamburger">
+						<svg class="icon--small">
+							<use href="./assets/ui_icons_sprite.svg#three-bars"></use>
+						</svg>
+					</button>
 
-					<button
-						class="header__link-primary header__link-primary--github"></button>
+					<button class="header__link-primary header__link-primary--github">
+						<svg class="icon--large">
+							<use href="./assets/ui_icons_sprite.svg#mark-github"></use>
+						</svg>
+					</button>
+				</nav>
 
-					<button
-						class="header__link-primary header__link-primary--username"></button>
+				<nav class="header__primary--middle">
+					<button class="header__link-primary header__link-primary--username">
+						Himanshu-Sorathiya-Simform
+					</button>
+
+					<div class="header__search">
+						<svg class="icon--small">
+							<use href="./assets/ui_icons_sprite.svg#search"></use>
+						</svg>
+
+						<input
+							type="search"
+							placeholder="Start with /" />
+					</div>
 				</nav>
 
 				<nav class="header__primary--right">
-					<div class="header__search"></div>
-
-					<div class="header__copilot"></div>
-
-					<div class="header__create"></div>
+					<button
+						class="btn-with-border header__link-primary header__link-primary--copilot">
+						<svg class="icon--small">
+							<use href="./assets/ui_icons_sprite.svg#copilot"></use>
+						</svg>
+					</button>
 
 					<button
-						class="header__link-primary header__link-primary--issue"></button>
+						class="btn-with-border header__link-primary header__link-primary--create">
+						<svg class="icon--small">
+							<use href="./assets/ui_icons_sprite.svg#plus"></use>
+						</svg>
+					</button>
 
 					<button
-						class="header__link-primary header__link-primary--pr"></button>
+						class="btn-with-border header__link-primary header__link-primary--issue">
+						<svg class="icon--small">
+							<use href="./assets/ui_icons_sprite.svg#issue-opened"></use>
+						</svg>
+					</button>
 
 					<button
-						class="header__link-primary header__link-primary--repository"></button>
+						class="btn-with-border header__link-primary header__link-primary--pr">
+						<svg class="icon--small">
+							<use
+								href="./assets/ui_icons_sprite.svg#git-pull-request"></use>
+						</svg>
+					</button>
 
 					<button
-						class="header__link-primary header__link-primary--notification"></button>
+						class="btn-with-border header__link-primary header__link-primary--repository">
+						<svg class="icon--small">
+							<use href="./assets/ui_icons_sprite.svg#repo"></use>
+						</svg>
+					</button>
+
+					<button
+						class="btn-with-border header__link-primary header__link-primary--notification">
+						<svg class="icon--small">
+							<use href="./assets/ui_icons_sprite.svg#inbox"></use>
+						</svg>
+					</button>
 
 					<img
-						src=""
-						alt=""
+						src="https://picsum.photos/500"
+						alt="User"
 						class="header__profile" />
 				</nav>
 			</section>
