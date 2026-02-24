@@ -1,3 +1,27 @@
+:root {
+	--color-primary: #0969da;
+	--color-secondary: #ffffff;
+	--color-accent: #f6f8fa;
+
+	--color-text-primary: #1f2328;
+	--color-text-secondary: #59636e;
+
+	--color-heatmap-cell--normal: #eff2f5;
+	--color-heatmap-green-100: #aceebb;
+	--color-heatmap-green-200: #4ac26b;
+	--color-heatmap-green-300: #2da44e;
+	--color-heatmap-green-400: #116329;
+
+	--border-thin: 0.0625rem;
+	--border-thick: 0.125rem;
+	--border-thicker: 0.25rem;
+
+	--border-radius-small: 0.1875rem;
+	--border-radius-medium: 0.375rem;
+	--border-radius-large: 0.75rem;
+	--border-radius-full: 9999px;
+}
+
 /*@ #CSS-RESETS */
 * {
 	padding: 0;
