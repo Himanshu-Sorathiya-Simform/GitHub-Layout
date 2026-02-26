@@ -1,0 +1,1047 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="GitHub Profile landing page clone" />
+
+		<link
+			rel="stylesheet"
+			href="./style.css" />
+
+		<title>GitHub Profile</title>
+	</head>
+
+	<body>
+		<header class="header">
+			<section class="header__primary">
+				<nav class="header__primary--left">
+					<button
+						title="hamburger-menu"
+						class="btn-with-border header__primary-link header__primary-link--hamburger">
+						<svg class="icon--small">
+							<use href="./assets/ui_icons_sprite.svg#three-bars"></use>
+						</svg>
+					</button>
+
+					<button
+						title="github-home"
+						class="header__primary-link header__primary-link--github">
+						<svg class="icon--large">
+							<use href="./assets/ui_icons_sprite.svg#mark-github"></use>
+						</svg>
+					</button>
+				</nav>
+
+				<nav class="header__primary--middle">
+					<button
+						title="himanshu-sorathiya-profile"
+						class="header__primary-link header__primary-link--username">
+						Himanshu-Sorathiya-Simform
+					</button>
+
+					<div class="header__search">
+						<svg class="icon--small">
+							<use href="./assets/ui_icons_sprite.svg#search"></use>
+						</svg>
+
+						<input
+							type="search"
+							placeholder="Start with /" />
+					</div>
+				</nav>
+
+				<nav class="header__primary--right">
+					<ul class="header__primary-list">
+						<li class="header__primary-item">
+							<button
+								title="github-copilot"
+								class="btn-with-border header__primary-link header__primary-link--copilot">
+								<svg class="icon--small">
+									<use
+										href="./assets/ui_icons_sprite.svg#copilot"></use>
+								</svg>
+							</button>
+						</li>
+
+						<li class="header__primary-item">
+							<button
+								title="add-new-repository"
+								class="btn-with-border header__primary-link header__primary-link--create">
+								<svg class="icon--small">
+									<use href="./assets/ui_icons_sprite.svg#plus"></use>
+								</svg>
+							</button>
+						</li>
+
+						<li class="header__primary-item">
+							<button
+								title="opened-issues"
+								class="btn-with-border header__primary-link header__primary-link--issue">
+								<svg class="icon--small">
+									<use
+										href="./assets/ui_icons_sprite.svg#issue-opened"></use>
+								</svg>
+							</button>
+						</li>
+
+						<li class="header__primary-item">
+							<button
+								title="pill-requests"
+								class="btn-with-border header__primary-link header__primary-link--pr">
+								<svg class="icon--small">
+									<use
+										href="./assets/ui_icons_sprite.svg#git-pull-request"></use>
+								</svg>
+							</button>
+						</li>
+
+						<li class="header__primary-item">
+							<button
+								title="repositories"
+								class="btn-with-border header__primary-link header__primary-link--repository">
+								<svg class="icon--small">
+									<use href="./assets/ui_icons_sprite.svg#repo"></use>
+								</svg>
+							</button>
+						</li>
+
+						<li class="header__primary-item">
+							<button
+								title="notifications-inbox"
+								class="btn-with-border header__primary-link header__primary-link--notification">
+								<svg class="icon--small">
+									<use href="./assets/ui_icons_sprite.svg#inbox"></use>
+								</svg>
+							</button>
+						</li>
+
+						<li class="header__primary-item">
+							<img
+								src="./assets/user.png"
+								alt="User"
+								class="header__profile" />
+						</li>
+					</ul>
+				</nav>
+			</section>
+
+			<nav class="header__secondary">
+				<ul class="header__secondary-list">
+					<li class="header__secondary-item">
+						<a
+							href="#"
+							class="header__secondary-link header__secondary-link--active header__secondary-link--overview">
+							<svg class="icon--small">
+								<use href="./assets/ui_icons_sprite.svg#book"></use>
+							</svg>
+
+							<span>Overview</span>
+						</a>
+					</li>
+
+					<li class="header__secondary-item">
+						<a
+							href="#"
+							class="header__secondary-link header__secondary-link--repository">
+							<svg class="icon--small">
+								<use href="./assets/ui_icons_sprite.svg#repo"></use>
+							</svg>
+
+							<span>Repositories</span>
+						</a>
+					</li>
+
+					<li class="header__secondary-item">
+						<a
+							href="#"
+							class="header__secondary-link header__secondary-link--projects">
+							<svg class="icon--small">
+								<use href="./assets/ui_icons_sprite.svg#table"></use>
+							</svg>
+
+							<span>Projects</span>
+						</a>
+					</li>
+
+					<li class="header__secondary-item">
+						<a
+							href="#"
+							class="header__secondary-link header__secondary-link--packages">
+							<svg class="icon--small">
+								<use href="./assets/ui_icons_sprite.svg#package"></use>
+							</svg>
+
+							<span>Packages</span>
+						</a>
+					</li>
+
+					<li class="header__secondary-item">
+						<a
+							href="#"
+							class="header__secondary-link header__secondary-link--star">
+							<svg class="icon--small">
+								<use href="./assets/ui_icons_sprite.svg#star"></use>
+							</svg>
+
+							<span>Stars</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="container">
+			<aside class="sidebar">
+				<section class="sidebar__profile">
+					<img
+						fetchpriority="high"
+						src="./assets/user.png"
+						alt="User"
+						class="sidebar__profile-img" />
+
+					<div class="sidebar__profile-heading">
+						<h2 class="sidebar__profile-name">Himanshu Sorathiya</h2>
+
+						<h3 class="sidebar__profile-username">
+							Himanshu-Sorathiya-Simform
+						</h3>
+					</div>
+
+					<button
+						title="edit-profile"
+						class="sidebar__profile-edit">
+						Edit Profile
+					</button>
+				</section>
+
+				<section class="sidebar__achievements">
+					<h2 class="sidebar__achievements-heading">Achievements</h2>
+
+					<ul class="sidebar__achievements-list">
+						<li class="sidebar__achievements-item">
+							<img
+								src="./assets/user.png"
+								alt="User"
+								class="sidebar__achievement" />
+						</li>
+						<li class="sidebar__achievements-item">
+							<img
+								src="./assets/user.png"
+								alt="User"
+								class="sidebar__achievement" />
+						</li>
+						<li class="sidebar__achievements-item">
+							<img
+								src="./assets/user.png"
+								alt="User"
+								class="sidebar__achievement" />
+						</li>
+						<li class="sidebar__achievements-item">
+							<img
+								src="./assets/user.png"
+								alt="User"
+								class="sidebar__achievement" />
+						</li>
+						<li class="sidebar__achievements-item">
+							<img
+								src="./assets/user.png"
+								alt="User"
+								class="sidebar__achievement" />
+						</li>
+						<li class="sidebar__achievements-item">
+							<img
+								src="./assets/user.png"
+								alt="User"
+								class="sidebar__achievement" />
+						</li>
+					</ul>
+				</section>
+			</aside>
+
+			<main class="main">
+				<section class="main__repositories">
+					<header class="main__repositories-header">
+						<h3>Pinned</h3>
+
+						<a href="#">Customize your pins</a>
+					</header>
+
+					<ol class="main__repositories-grid">
+						<li>
+							<article class="repositories-grid__item">
+								<header class="repository--header">
+									<svg class="icon--small">
+										<use
+											href="./assets/ui_icons_sprite.svg#repo"></use>
+									</svg>
+
+									<a class="repository--name">Jira-Kanban-Layout</a>
+
+									<span class="repository--type">Public</span>
+
+									<button title="grab-repo">
+										<svg class="icon--small">
+											<use
+												href="./assets/ui_icons_sprite.svg#grabber"></use>
+										</svg>
+									</button>
+								</header>
+
+								<p class="repository--description">
+									Jira dashboard layout clone using HTML and CSS with
+									responsiveness and semantics for accessibility.
+								</p>
+
+								<div class="repository--stats">
+									<div class="repository--stars">
+										<svg class="icon--small">
+											<use
+												href="./assets/ui_icons_sprite.svg#star"></use>
+										</svg>
+
+										<span>1</span>
+									</div>
+
+									<ul class="repository--languages">
+										<li class="repository--language">
+											<span
+												class="circle"
+												data-language="HTML"></span>
+
+											<span>HTML</span>
+										</li>
+										<li class="repository--language">
+											<span
+												class="circle"
+												data-language="CSS"></span>
+
+											<span>CSS</span>
+										</li>
+										<li class="repository--language">
+											<span
+												class="circle"
+												data-language="JavaScript"></span>
+
+											<span>JavaScript</span>
+										</li>
+									</ul>
+								</div>
+							</article>
+						</li>
+
+						<li>
+							<article class="repositories-grid__item">
+								<header class="repository--header">
+									<svg class="icon--small">
+										<use
+											href="./assets/ui_icons_sprite.svg#repo"></use>
+									</svg>
+
+									<a class="repository--name">Jira-Kanban-Layout</a>
+
+									<span class="repository--type">Public</span>
+
+									<button title="grab-repo">
+										<svg class="icon--small">
+											<use
+												href="./assets/ui_icons_sprite.svg#grabber"></use>
+										</svg>
+									</button>
+								</header>
+
+								<div class="repository--stats">
+									<div class="repository--stars">
+										<svg class="icon--small">
+											<use
+												href="./assets/ui_icons_sprite.svg#star"></use>
+										</svg>
+
+										<span>1</span>
+									</div>
+
+									<ul class="repository--languages">
+										<li class="repository--language">
+											<span
+												class="circle"
+												data-language="HTML"></span>
+
+											<span>HTML</span>
+										</li>
+										<li class="repository--language">
+											<span
+												class="circle"
+												data-language="CSS"></span>
+
+											<span>CSS</span>
+										</li>
+										<li class="repository--language">
+											<span
+												class="circle"
+												data-language="JavaScript"></span>
+
+											<span>JavaScript</span>
+										</li>
+									</ul>
+								</div>
+							</article>
+						</li>
+
+						<li>
+							<article class="repositories-grid__item">
+								<header class="repository--header">
+									<svg class="icon--small">
+										<use
+											href="./assets/ui_icons_sprite.svg#repo"></use>
+									</svg>
+
+									<a class="repository--name">Jira-Kanban-Layout</a>
+
+									<span class="repository--type">Public</span>
+
+									<button title="grab-repo">
+										<svg class="icon--small">
+											<use
+												href="./assets/ui_icons_sprite.svg#grabber"></use>
+										</svg>
+									</button>
+								</header>
+
+								<p class="repository--description">
+									Jira dashboard layout clone using HTML and CSS with
+									responsiveness and semantics for accessibility.
+								</p>
+
+								<div class="repository--stats">
+									<div class="repository--stars">
+										<svg class="icon--small">
+											<use
+												href="./assets/ui_icons_sprite.svg#star"></use>
+										</svg>
+
+										<span>1</span>
+									</div>
+
+									<ul class="repository--languages">
+										<li class="repository--language">
+											<span
+												class="circle"
+												data-language="HTML"></span>
+
+											<span>HTML</span>
+										</li>
+									</ul>
+								</div>
+							</article>
+						</li>
+
+						<li>
+							<article class="repositories-grid__item">
+								<header class="repository--header">
+									<svg class="icon--small">
+										<use
+											href="./assets/ui_icons_sprite.svg#repo"></use>
+									</svg>
+
+									<a class="repository--name">Jira-Kanban-Layout</a>
+
+									<span class="repository--type">Public</span>
+
+									<button title="grab-repo">
+										<svg class="icon--small">
+											<use
+												href="./assets/ui_icons_sprite.svg#grabber"></use>
+										</svg>
+									</button>
+								</header>
+
+								<div class="repository--stats">
+									<div class="repository--stars">
+										<svg class="icon--small">
+											<use
+												href="./assets/ui_icons_sprite.svg#star"></use>
+										</svg>
+
+										<span>1</span>
+									</div>
+								</div>
+							</article>
+						</li>
+
+						<li>
+							<article class="repositories-grid__item">
+								<header class="repository--header">
+									<svg class="icon--small">
+										<use
+											href="./assets/ui_icons_sprite.svg#repo"></use>
+									</svg>
+
+									<a class="repository--name">Jira-Kanban-Layout</a>
+
+									<span class="repository--type">Public</span>
+
+									<button title="grab-repo">
+										<svg class="icon--small">
+											<use
+												href="./assets/ui_icons_sprite.svg#grabber"></use>
+										</svg>
+									</button>
+								</header>
+
+								<p class="repository--description">
+									Jira dashboard layout clone using HTML and CSS with
+									responsiveness and semantics for accessibility.
+								</p>
+							</article>
+						</li>
+
+						<li>
+							<article class="repositories-grid__item">
+								<header class="repository--header">
+									<svg class="icon--small">
+										<use
+											href="./assets/ui_icons_sprite.svg#repo"></use>
+									</svg>
+
+									<a class="repository--name">Jira-Kanban-Layout</a>
+
+									<span class="repository--type">Public</span>
+
+									<button title="grab-repo">
+										<svg class="icon--small">
+											<use
+												href="./assets/ui_icons_sprite.svg#grabber"></use>
+										</svg>
+									</button>
+								</header>
+
+								<p class="repository--description">
+									Jira dashboard layout clone using HTML and CSS with
+									responsiveness and semantics for accessibility.
+								</p>
+
+								<div class="repository--stats">
+									<ul class="repository--languages">
+										<li class="repository--language">
+											<span
+												class="circle"
+												data-language="HTML"></span>
+
+											<span>HTML</span>
+										</li>
+										<li class="repository--language">
+											<span
+												class="circle"
+												data-language="CSS"></span>
+
+											<span>CSS</span>
+										</li>
+									</ul>
+								</div>
+							</article>
+						</li>
+					</ol>
+				</section>
+
+				<section class="main__activity">
+					<div class="activity__container">
+						<article class="activity__heatmap-wrapper">
+							<header class="heatmap__header">
+								<p>32 Contributions this year</p>
+
+								<a href="#">
+									<span>Contribution settings</span>
+
+									<svg class="icon--small">
+										<use
+											href="./assets/ui_icons_sprite.svg#triangle-down"></use>
+									</svg>
+								</a>
+							</header>
+
+							<div class="heatmap__container">
+								<div class="heatmap__first-row heatmap__months">
+									<span class="heatmap__month">Jan</span>
+									<span class="heatmap__month">Feb</span>
+									<span class="heatmap__month">Mar</span>
+									<span class="heatmap__month">Apr</span>
+									<span class="heatmap__month">May</span>
+									<span class="heatmap__month">Jun</span>
+									<span class="heatmap__month">Jul</span>
+									<span class="heatmap__month">Aug</span>
+									<span class="heatmap__month">Sep</span>
+									<span class="heatmap__month">Oct</span>
+									<span class="heatmap__month">Nov</span>
+									<span class="heatmap__month">Dec</span>
+								</div>
+
+								<div class="heatmap__second-row">
+									<div class="heatmap__weekdays">
+										<span class="heatmap__weekday">Mon</span>
+										<span class="heatmap__weekday">Wed</span>
+										<span class="heatmap__weekday">Fri</span>
+									</div>
+
+									<div class="heatmap">
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+										<span class="heatmap__box"></span>
+									</div>
+								</div>
+
+								<div class="heatmap__third-row">
+									<span>Learn how we count contributions</span>
+
+									<div>
+										<span>Less</span>
+										<span
+											class="heatmap__box"
+											data-box="1"></span>
+										<span
+											class="heatmap__box"
+											data-box="2"></span>
+										<span
+											class="heatmap__box"
+											data-box="3"></span>
+										<span
+											class="heatmap__box"
+											data-box="4"></span>
+										<span
+											class="heatmap__box"
+											data-box="5"></span>
+										<span>More</span>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="activity__timeline-wrapper">
+							<header class="timeline__header">
+								Contribution activity
+							</header>
+
+							<div class="timeline__container">
+								<p class="timeline__month">
+									<strong>
+										<span class="month">February</span>
+										<span class="year">2026</span></strong
+									>
+								</p>
+
+								<div class="timeline__month-details">
+									<a href="#">Created 26 Commits in 1 repository</a>
+
+									<a href="#1">Himanshu-Sorathiya-Simform/Jira...</a>
+								</div>
+
+								<p class="timeline__month">
+									<strong>
+										<span class="month">February</span>
+										<span class="year">2026</span></strong
+									>
+								</p>
+
+								<div class="timeline__month-details">
+									<a href="#">Created 26 Commits in 1 repository</a>
+
+									<a href="#1">Himanshu-Sorathiya-Simform/Jira...</a>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<ol class="activity__years">
+						<li>
+							<button
+								title="year-2026"
+								class="activity__year btn--primary">
+								2026
+							</button>
+						</li>
+
+						<li>
+							<button
+								title="year-2025"
+								class="activity__year">
+								2025
+							</button>
+						</li>
+
+						<li>
+							<button
+								title="year-2024"
+								class="activity__year">
+								2024
+							</button>
+						</li>
+					</ol>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>
