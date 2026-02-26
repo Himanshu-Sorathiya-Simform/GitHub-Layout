@@ -21,13 +21,16 @@
 			<section class="header__primary">
 				<nav class="header__primary--left">
 					<button
+						title="hamburger-menu"
 						class="btn-with-border header__primary-link header__primary-link--hamburger">
 						<svg class="icon--small">
 							<use href="./assets/ui_icons_sprite.svg#three-bars"></use>
 						</svg>
 					</button>
 
-					<button class="header__primary-link header__primary-link--github">
+					<button
+						title="github-home"
+						class="header__primary-link header__primary-link--github">
 						<svg class="icon--large">
 							<use href="./assets/ui_icons_sprite.svg#mark-github"></use>
 						</svg>
@@ -35,7 +38,9 @@
 				</nav>
 
 				<nav class="header__primary--middle">
-					<button class="header__primary-link header__primary-link--username">
+					<button
+						title="himanshu-sorathiya-profile"
+						class="header__primary-link header__primary-link--username">
 						Himanshu-Sorathiya-Simform
 					</button>
 
@@ -54,6 +59,7 @@
 					<ul class="header__primary-list">
 						<li class="header__primary-item">
 							<button
+								title="github-copilot"
 								class="btn-with-border header__primary-link header__primary-link--copilot">
 								<svg class="icon--small">
 									<use
@@ -64,6 +70,7 @@
 
 						<li class="header__primary-item">
 							<button
+								title="add-new-repository"
 								class="btn-with-border header__primary-link header__primary-link--create">
 								<svg class="icon--small">
 									<use href="./assets/ui_icons_sprite.svg#plus"></use>
@@ -73,6 +80,7 @@
 
 						<li class="header__primary-item">
 							<button
+								title="opened-issues"
 								class="btn-with-border header__primary-link header__primary-link--issue">
 								<svg class="icon--small">
 									<use
@@ -83,6 +91,7 @@
 
 						<li class="header__primary-item">
 							<button
+								title="pill-requests"
 								class="btn-with-border header__primary-link header__primary-link--pr">
 								<svg class="icon--small">
 									<use
@@ -93,6 +102,7 @@
 
 						<li class="header__primary-item">
 							<button
+								title="repositories"
 								class="btn-with-border header__primary-link header__primary-link--repository">
 								<svg class="icon--small">
 									<use href="./assets/ui_icons_sprite.svg#repo"></use>
@@ -102,6 +112,7 @@
 
 						<li class="header__primary-item">
 							<button
+								title="notifications-inbox"
 								class="btn-with-border header__primary-link header__primary-link--notification">
 								<svg class="icon--small">
 									<use href="./assets/ui_icons_sprite.svg#inbox"></use>
@@ -111,7 +122,7 @@
 
 						<li class="header__primary-item">
 							<img
-								src="https://picsum.photos/500"
+								src="./assets/user.png"
 								alt="User"
 								class="header__profile" />
 						</li>
@@ -188,7 +199,8 @@
 			<aside class="sidebar">
 				<section class="sidebar__profile">
 					<img
-						src="https://picsum.photos/500"
+						fetchpriority="high"
+						src="./assets/user.png"
 						alt="User"
 						class="sidebar__profile-img" />
 
@@ -200,7 +212,11 @@
 						</h3>
 					</div>
 
-					<button class="sidebar__profile-edit">Edit Profile</button>
+					<button
+						title="edit-profile"
+						class="sidebar__profile-edit">
+						Edit Profile
+					</button>
 				</section>
 
 				<section class="sidebar__achievements">
@@ -209,37 +225,37 @@
 					<ul class="sidebar__achievements-list">
 						<li class="sidebar__achievements-item">
 							<img
-								src="https://picsum.photos/500"
+								src="./assets/user.png"
 								alt="User"
 								class="sidebar__achievement" />
 						</li>
 						<li class="sidebar__achievements-item">
 							<img
-								src="https://picsum.photos/500"
+								src="./assets/user.png"
 								alt="User"
 								class="sidebar__achievement" />
 						</li>
 						<li class="sidebar__achievements-item">
 							<img
-								src="https://picsum.photos/500"
+								src="./assets/user.png"
 								alt="User"
 								class="sidebar__achievement" />
 						</li>
 						<li class="sidebar__achievements-item">
 							<img
-								src="https://picsum.photos/500"
+								src="./assets/user.png"
 								alt="User"
 								class="sidebar__achievement" />
 						</li>
 						<li class="sidebar__achievements-item">
 							<img
-								src="https://picsum.photos/500"
+								src="./assets/user.png"
 								alt="User"
 								class="sidebar__achievement" />
 						</li>
 						<li class="sidebar__achievements-item">
 							<img
-								src="https://picsum.photos/500"
+								src="./assets/user.png"
 								alt="User"
 								class="sidebar__achievement" />
 						</li>
@@ -268,7 +284,7 @@
 
 									<span class="repository--type">Public</span>
 
-									<button>
+									<button title="grab-repo">
 										<svg class="icon--small">
 											<use
 												href="./assets/ui_icons_sprite.svg#grabber"></use>
@@ -330,7 +346,7 @@
 
 									<span class="repository--type">Public</span>
 
-									<button>
+									<button title="grab-repo">
 										<svg class="icon--small">
 											<use
 												href="./assets/ui_icons_sprite.svg#grabber"></use>
@@ -387,7 +403,7 @@
 
 									<span class="repository--type">Public</span>
 
-									<button>
+									<button title="grab-repo">
 										<svg class="icon--small">
 											<use
 												href="./assets/ui_icons_sprite.svg#grabber"></use>
@@ -435,7 +451,7 @@
 
 									<span class="repository--type">Public</span>
 
-									<button>
+									<button title="grab-repo">
 										<svg class="icon--small">
 											<use
 												href="./assets/ui_icons_sprite.svg#grabber"></use>
@@ -468,7 +484,7 @@
 
 									<span class="repository--type">Public</span>
 
-									<button>
+									<button title="grab-repo">
 										<svg class="icon--small">
 											<use
 												href="./assets/ui_icons_sprite.svg#grabber"></use>
@@ -495,7 +511,7 @@
 
 									<span class="repository--type">Public</span>
 
-									<button>
+									<button title="grab-repo">
 										<svg class="icon--small">
 											<use
 												href="./assets/ui_icons_sprite.svg#grabber"></use>
@@ -1001,15 +1017,27 @@
 
 					<ol class="activity__years">
 						<li>
-							<button class="activity__year btn--primary">2026</button>
+							<button
+								title="year-2026"
+								class="activity__year btn--primary">
+								2026
+							</button>
 						</li>
 
 						<li>
-							<button class="activity__year">2025</button>
+							<button
+								title="year-2025"
+								class="activity__year">
+								2025
+							</button>
 						</li>
 
 						<li>
-							<button class="activity__year">2024</button>
+							<button
+								title="year-2024"
+								class="activity__year">
+								2024
+							</button>
 						</li>
 					</ol>
 				</section>
