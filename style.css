@@ -733,6 +733,20 @@ button {
 	}
 }
 
+.activity__btn {
+	color: var(--color-primary);
+	font-size: 0.875rem;
+	font-weight: 500;
+
+	&:is(:focus, :hover) {
+		background-color: var(--color-hover-focus);
+	}
+
+	&:is(:focus) {
+		outline: var(--border-thick) solid var(--color-primary);
+	}
+}
+
 .activity__years {
 	display: flex;
 	flex-direction: column;
@@ -749,6 +763,38 @@ button {
 
 	&:not(.btn--primary):is(:focus, :hover) {
 		background-color: var(--color-hover-focus);
+	}
+}
+
+/*@ #FOOTER-STYLES */
+.footer {
+	grid-column: 1 / -1;
+	justify-self: center;
+}
+
+.footer__links {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+
+	li:first-child p {
+		color: var(--color-text-primary);
+		font-size: 0.75rem;
+		font-weight: 300;
+	}
+}
+
+.footer__link {
+	color: var(--color-text-primary);
+	font-size: 0.75rem;
+	font-weight: 300;
+
+	&:is(:hover, :focus) {
+		color: var(--color-primary);
+		text-decoration: underline;
+	}
+
+	&:is(:focus) {
 		outline: var(--border-thick) solid var(--color-primary);
 	}
 }
