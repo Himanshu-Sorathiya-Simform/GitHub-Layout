@@ -135,6 +135,17 @@
 									class="header__profile" />
 							</button>
 						</li>
+
+						<li class="header__primary-item">
+							<button
+								title="notifications-inbox"
+								class="btn-with-border header__primary-link header__primary-link--hamburger">
+								<svg class="icon--small">
+									<use
+										href="./assets/ui_icons_sprite.svg#three-bars"></use>
+								</svg>
+							</button>
+						</li>
 					</ul>
 				</nav>
 			</section>
@@ -204,6 +215,19 @@
 							<span>5</span>
 						</a>
 					</li>
+
+					<li class="header__secondary-item">
+						<a
+							href="#"
+							class="header__secondary-link header__secondary-link--more">
+							<svg class="icon--small">
+								<use
+									href="./assets/ui_icons_sprite.svg#chevron-down"></use>
+							</svg>
+
+							<span>More</span>
+						</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -211,18 +235,20 @@
 		<div class="container">
 			<aside class="sidebar">
 				<section class="sidebar__profile">
-					<img
-						fetchpriority="high"
-						src="https://avatars.githubusercontent.com/u/256061890?v=4"
-						alt="User"
-						class="sidebar__profile-img" />
+					<div class="sidebar__profile--container">
+						<img
+							fetchpriority="high"
+							src="https://avatars.githubusercontent.com/u/256061890?v=4"
+							alt="User"
+							class="sidebar__profile-img" />
 
-					<div class="sidebar__profile-heading">
-						<h2 class="sidebar__profile-name">Himanshu Sorathiya</h2>
+						<div class="sidebar__profile-heading">
+							<h2 class="sidebar__profile-name">Himanshu Sorathiya</h2>
 
-						<h3 class="sidebar__profile-username">
-							Himanshu-Sorathiya-Simform
-						</h3>
+							<h3 class="sidebar__profile-username">
+								Himanshu-Sorathiya-Simform
+							</h3>
+						</div>
 					</div>
 
 					<button
@@ -615,7 +641,7 @@
 
 				<section class="main__activity">
 					<div class="activity__container">
-						<article class="activity__heatmap-wrapper">
+						<!-- <article class="activity__heatmap-wrapper">
 							<header class="heatmap__header">
 								<p>32 Contributions this year</p>
 
@@ -1044,7 +1070,7 @@
 									</div>
 								</div>
 							</div>
-						</article>
+						</article> -->
 
 						<article class="activity__timeline-wrapper">
 							<header class="timeline__header">
@@ -1113,7 +1139,7 @@
 				</section>
 			</main>
 
-			<footer class="footer">
+			<!-- <footer class="footer">
 				<ul class="footer__links">
 					<li>
 						<p>© 2026 GitHub, Inc.</p>
@@ -1200,7 +1226,7 @@
 						>
 					</li>
 				</ul>
-			</footer>
+			</footer> -->
 		</div>
 	</body>
 </html>
