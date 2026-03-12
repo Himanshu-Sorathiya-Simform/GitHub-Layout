@@ -23,6 +23,11 @@
 	--border-radius-medium: 0.375rem;
 	--border-radius-large: 0.75rem;
 	--border-radius-full: 9999px;
+
+	--font-weight-light: 300;
+	--font-weight-normal: 400;
+	--font-weight-semi-bold: 500;
+	--font-weight-bold: 600;
 }
 
 /*@ #CSS-RESETS */
@@ -178,7 +183,7 @@ button {
 	/*       ALL  */
 	padding: 0.375rem;
 	font-size: 0.875rem;
-	font-weight: 600;
+	font-weight: var(--font-weight-bold);
 
 	&:is(:focus, :hover) {
 		background-color: var(--color-hover-focus);
@@ -257,7 +262,7 @@ button {
 	color: var(--color-text-primary);
 	/*    TOP/BOTTOM  RIGHT/LEFT  */
 	padding: 0.375rem 0.5rem;
-	font-weight: 400;
+	font-weight: var(--font-weight-normal);
 	font-size: 0.875rem;
 	border-radius: var(--border-radius-medium);
 
@@ -290,13 +295,13 @@ button {
 		padding: 0.25rem 0.5rem;
 		background-color: var(--color-border);
 		font-size: 0.75rem;
-		font-weight: 600;
+		font-weight: var(--font-weight-bold);
 		border-radius: var(--border-radius-full);
 	}
 }
 
 .header__secondary-link--active {
-	font-weight: 600;
+	font-weight: var(--font-weight-bold);
 
 	&::after {
 		height: 2px;
@@ -347,12 +352,12 @@ button {
 .sidebar__profile-name {
 	color: var(--color-text-primary);
 	font-size: 1.5rem;
-	font-weight: 600;
+	font-weight: var(--font-weight-bold);
 }
 
 .sidebar__profile-username {
 	font-size: 1.25rem;
-	font-weight: 300;
+	font-weight: var(--font-weight-light);
 }
 
 .sidebar__profile-edit {
@@ -385,7 +390,7 @@ button {
 
 .sidebar__achievements-heading {
 	color: var(--color-text-primary);
-	font-weight: 600;
+	font-weight: var(--font-weight-bold);
 }
 
 .sidebar__achievements-list {
@@ -430,7 +435,7 @@ button {
 
 	> h3 {
 		color: var(--color-text-primary);
-		font-weight: 500;
+		font-weight: var(--font-weight-semi-bold);
 	}
 
 	> a {
@@ -477,7 +482,7 @@ button {
 .repository--name {
 	color: var(--color-primary);
 	font-size: 0.875rem;
-	font-weight: 600;
+	font-weight: var(--font-weight-bold);
 
 	&:is(:focus, :hover) {
 		text-decoration: underline;
@@ -506,7 +511,7 @@ button {
 
 .repository--description {
 	font-size: 0.75rem;
-	font-weight: 300;
+	font-weight: var(--font-weight-light);
 	line-height: 1.5;
 }
 
@@ -571,7 +576,7 @@ button {
 	> a {
 		padding: 0.125rem 0.25rem;
 		font-size: 0.75rem;
-		font-weight: 300;
+		font-weight: var(--font-weight-light);
 		border-radius: var(--border-radius-medium);
 
 		display: flex;
@@ -648,7 +653,7 @@ button {
 	/*    TOP  RIGHT/LEFT  BOTTOM  */
 	margin: 0.5rem 1.6rem 0;
 	font-size: 0.75rem;
-	font-weight: 300;
+	font-weight: var(--font-weight-light);
 
 	display: flex;
 	align-items: center;
@@ -719,12 +724,12 @@ button {
 .month {
 	color: var(--color-text-primary);
 	font-size: 0.75rem;
-	font-weight: 600;
+	font-weight: var(--font-weight-bold);
 }
 
 .year {
 	font-size: 0.75rem;
-	font-weight: 600;
+	font-weight: var(--font-weight-bold);
 }
 
 .timeline__month-details {
@@ -751,7 +756,7 @@ button {
 .activity__btn {
 	color: var(--color-primary);
 	font-size: 0.875rem;
-	font-weight: 500;
+	font-weight: var(--font-weight-semi-bold);
 
 	&:is(:focus, :hover) {
 		background-color: var(--color-hover-focus);
@@ -797,14 +802,14 @@ button {
 	li:first-child p {
 		color: var(--color-text-primary);
 		font-size: 0.75rem;
-		font-weight: 300;
+		font-weight: var(--font-weight-light);
 	}
 }
 
 .footer__link {
 	color: var(--color-text-primary);
 	font-size: 0.75rem;
-	font-weight: 300;
+	font-weight: var(--font-weight-light);
 
 	&:is(:hover, :focus) {
 		color: var(--color-primary);
@@ -838,10 +843,8 @@ button {
 }
 
 @media (max-width: 640px) {
-	.header__search > input {
-		display: none;
-	}
-
+	.activity__years,
+	.header__search > input,
 	.header__secondary-item:not(.header__secondary-item--more):not(
 			:has(.header__secondary-link--active)
 		) {
@@ -868,9 +871,5 @@ button {
 
 	.main__activity {
 		grid-template-columns: 1fr;
-	}
-
-	.activity__years {
-		display: none;
 	}
 }
